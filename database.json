@@ -1,0 +1,71 @@
+{
+    "users": {
+        "0": {
+            "email": "email",
+            "password_hash": "password_hash",
+            "name": "Stanisław Bielecki"
+        }
+    },
+    "houses": {
+        "0": {
+            "user_id": "0",
+            "address": "Stefana Żeromskiego 116",
+            "name": "Lodz University of Technology"
+        }
+    },
+    "devices": {
+        "0": {
+            "house_id": "0",
+            "name": "name",
+            "nominal_power_kw": 0.0
+        }
+    },
+    "schedules": {
+        "0": {
+            "device_id": "0",
+            "day_of_week": "monday",
+            "start_time": "08:00",
+            "end_time": "09:00"
+        }
+    },
+    "usage_records": {
+        "0": {
+            "device_id": "0",
+            "date": "30.01.2025",
+            "start_time": "00:00",
+            "end_time": "23:59",
+            "total_consumption_kw": 9999.99,
+            "cost": 9999.99
+        }
+    },
+    "tariffs": {
+        "0": {
+            "name": "Taryfa ulgowa",
+            "day_rate_kwh": 1.0,
+            "night_rate_kwh": 0.1,
+            "day_start": "08:00",
+            "night_start": "20:00"
+        }
+    },
+    "photovoltaic_systems": {
+        "0": {
+            "house_id": "0",
+            "panel_area_m2": 25.0,
+            "max_power_kw": 99.0
+        }
+    },
+    "batteries": {
+        "0": {
+            "photovoltaic_system_id": "0",
+            "capacity_kwh": 10.0,
+            "current_charge_kwh": 20.0
+        }
+    },
+    "production_records": {
+        "0": {
+            "photovoltaic_system_id": "0",
+            "date": "30.01.2025",
+            "produced_energy_kwh": 2000.0
+        }
+    }
+}
