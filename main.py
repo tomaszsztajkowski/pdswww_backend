@@ -353,7 +353,9 @@ def patch_entry(name, _id, user_id, not_allowed_keys=None, unique_keys=None):
     for key in unique_keys:
         if key in request_json and not all([request_json[key] != item[key] for item in database[name].values()]):
             return '"{}": "{}" already in different item'.format(key, request_json[key]), 403
-
+    
+    del request_json['auth_token']
+    
     database[name][_id].update(request_json)
     save_database()
     return database[name][_id]
