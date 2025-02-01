@@ -11,13 +11,19 @@
             "user_id": "0",
             "address": "Stefana Żeromskiego 116",
             "name": "Lodz University of Technology"
+        },
+        "89416589": {
+            "address": "jogurtowa 5",
+            "name": "domek",
+            "user_id": "0"
         }
     },
     "devices": {
         "0": {
             "house_id": "0",
-            "name": "name",
-            "nominal_power_kw": 0.0
+            "name": "hihi",
+            "nominal_power_kw": 0.0,
+            "auth_token": "469227116ef0cff5c4dbd41df9ae001b768795ad7b57d1687ae657611bfcaab6"
         }
     },
     "schedules": {
