@@ -1,6 +1,7 @@
 import json
 import random
 import secrets
+from flask_cors import CORS
 from idlelib.rpc import request_queue
 
 from flask import Flask, abort, request
@@ -10,6 +11,7 @@ with open("database.json", "r") as f:
 
 app = Flask(__name__)
 
+CORS(app)
 
 @app.route('/')
 def hello():
